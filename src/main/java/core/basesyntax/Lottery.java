@@ -5,9 +5,8 @@ import java.util.Random;
 public class Lottery {
 
     public Ball getRandomBall() {
-        Ball ball = new Ball();
-        ball.setColor(new ColorSupplier().getRandomColor());
-        ball.setNumber(new Random().nextInt(100));
-        return ball;
+        String color = new ColorSupplier().getRandomColor();
+        int number = new Random().nextInt(100);
+        return new Ball(color, number);
     }
 }
