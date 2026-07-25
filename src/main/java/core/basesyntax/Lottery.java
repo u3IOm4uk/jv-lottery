@@ -3,7 +3,7 @@ package core.basesyntax;
 import java.util.Random;
 
 public class Lottery {
-    Ball ball = new Ball();
+    private Ball ball = new Ball();
 
     public Ball getRandomBall() {
         ball.setColor(new ColorSupplier().getRandomColor());
@@ -13,8 +13,8 @@ public class Lottery {
 
     @Override
     public String toString() {
-        return "Lottery{" +
-                "ball=" + ball +
-                '}';
+        return "Lottery{"
+               + "ball=" + ball
+               + '}';
     }
 }
